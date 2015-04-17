@@ -1,0 +1,66 @@
+一期表及其字段定义
+媒资表  asset
+{ 
+    "_id" : ObjectId("552e47a244a45b14f41b7cd4"), 
+    "asset_id" : "asset_id0", 
+    "asset_name" : "0", 
+    "asset_provider" : "0", 
+    "asset_duration" : NumberLong(0)
+     
+}
+
+回看日志  back_log
+{ 
+    "_id" : ObjectId("552e47a544a45b14f41ba63c"), 
+    "asset_id" : "asset_id0", 
+    "program_name" : "program0", 
+    "start_time" : ISODate("2015-04-15T11:12:37.496+0000"), 
+    "end_time" : ISODate("2015-04-15T11:12:37.496+0000"), 
+   // "card_number" : "0", 
+    //"area_id" : "area0"
+}
+
+直播日志  live_log
+时移日志  shift_log
+点播日志  vod_log
+表结构同 回看日志
+
+epg信息表  epg_log
+{ 
+    "_id" : ObjectId("552e47a244a45b14f41b7d38"), 
+    "on_id" : "0", 
+    "ts_id" : "ts_id0", 
+    "channel_id" : "0", 
+    "date_time" : "2015-04-15 19:12:34", 
+    "program_name" : "program0"
+}
+
+事件表  event_log
+{ 
+    "_id" : ObjectId("552e47a444a45b14f41ba4ac"), 
+    "event_id" : "0", 
+    "event_type" : "vod", 
+    "date_time" : ISODate("2015-04-15T11:12:36.870+0000"), 
+    "card_number" : "0"
+}
+
+开机日志  startup_log
+{ 
+    "_id" : ObjectId("552e47a544a45b14f41ba574"), 
+    "card_number" : "card0", 
+    "date_time" : ISODate("2015-04-15T11:12:37.205+0000"), 
+    "area_id" : "area0"
+}
+
+
+
+基础用户信息  user
+
+{ 
+    "_id" : ObjectId("552e47a544a45b14f41ba6a0"), 
+    "card_number" : "card0", 
+    "area_code" : "area0"
+}
+
+
+
